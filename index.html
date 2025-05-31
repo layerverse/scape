@@ -1,11 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Layerscape</title>
   <link rel="stylesheet" href="https://unpkg.com/@picocss/pico@1.5.10/css/pico.min.css" />
+  <style>
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.5rem;
+    }
+  </style>
 </head>
+
 <body>
   <main class="container">
     <h1>Layerscape</h1>
@@ -17,9 +26,26 @@
       <h2>セクション2</h2>
       <p>ほぼHTMLだけで整った見た目になります。</p>
     </section>
+    <section>
+      <div class="grid">
+        <article>
+          <h3>タイトル1</h3>
+          <p>内容がここに入ります。</p>
+        </article>
+        <article>
+          <h3>タイトル2</h3>
+          <p>もっと長い文章でも大丈夫。</p>
+        </article>
+        <article>
+          <h3>タイトル3</h3>
+          <p>好きなだけ追加できます。</p>
+        </article>
+      </div>
+    </section>
     <footer>
       <small>&copy; 2025 Numan</small>
     </footer>
   </main>
 </body>
+
 </html>
